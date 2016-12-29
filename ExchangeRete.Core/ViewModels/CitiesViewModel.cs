@@ -17,19 +17,6 @@ namespace ExchangeRete.Core
 			}
 			set
 			{
-				//for (int i = 0; i < _cities.Count; i++){ _cities[i].Selected = false; }
-				//for (int i = 0; i < _cities.Count; i++)
-				//{
-				//	if (_cities[i].Id == Settings.SaveSettingsCitySelect.Id)
-				//		_cities[i].Selected = Settings.SaveSettingsCitySelect.Selected;
-				//}
-
-				//foreach (var city in _cities)//загрузка настроек в текущую модель городов
-				//{
-				//	if (city.Id == Settings.SaveSettingsCitySelect.Id)
-				//		city.Selected = Settings.SaveSettingsCitySelect.Selected;
-				//}
-
 				_cities = value;
 				RaisePropertyChanged(() => Cities);
 			}
@@ -48,10 +35,7 @@ namespace ExchangeRete.Core
 		{
 			_dataService = service;
 		}
-		//public void rebut() 
-		//{
-		//	Cities = Cities;
-		//}
+
 
 		public async Task DownloadDataCities()
 		{
