@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <Button
+            android:id="@+id/button"
+            android:layout_width="96.0dp"
+            android:layout_height="wrap_content"
+            android:text="P&gt;$"
+            local:MvxBind="Click SelectBuySellEURUSD, CommandParameter=0" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="96.0dp"
+            android:layout_height="wrap_content"
+            android:text="$&gt;P"
+            local:MvxBind="Click SelectBuySellEURUSD, CommandParameter=1" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="96.0dp"
+            android:layout_height="wrap_content"
+            android:text="P&gt;€"
+            local:MvxBind="Click SelectBuySellEURUSD, CommandParameter=2" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="96.0dp"
+            android:layout_height="wrap_content"
+            android:text="€&gt;P"
+            local:MvxBind="Click SelectBuySellEURUSD, CommandParameter=3" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+    <MvxListView
+        android:listSelector="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:id="@+id/bankslist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        local:MvxBind="ItemsSource CurrencyBank"
+        local:MvxItemTemplate="@layout/banks_list_item" />
+</LinearLayout>

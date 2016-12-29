@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+    <TextView
+        android:text="Города"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="18dp"
+        android:id="@+id/textView1"
+        android:layout_marginLeft="0.0dp" />
+    <MvxListView
+        android:choiceMode="@android:color/background_light"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:id="@+id/bankslist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        local:MvxBind="ItemsSource Cities; ItemClick SelectCities"
+        local:MvxItemTemplate="@layout/cities_list_item" />
+</LinearLayout>
