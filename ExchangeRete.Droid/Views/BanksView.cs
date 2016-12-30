@@ -13,18 +13,6 @@ namespace ExchangeRete.Droid
 	[Register("exchangerete.droid.BanksView")]
 	public class BanksView : MvxFragment
 	{
-
-
-
-		//public new BanksViewModel ViewModel
-		//{
-		//	get
-		//	{
-		//		return (BanksViewModel)base.ViewModel;
-		//	}
-		//}
-
-
 		public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle saveInstanceState)
 		{
 			var ignore = base.OnCreateView(inflater, container, saveInstanceState);

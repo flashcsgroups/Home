@@ -32,60 +32,13 @@ namespace ExchangeRete.Core
 						Settings.SaveParamSortBanks = EExchangeAction.USDSell;
 						break;
 				}
-			// banksBVM = new BanksViewModel();
 			var banksVM = new List<BankViewModel>();
 
 			foreach (var bank in bybanks)
 			{
 				banksVM.Add(new BankViewModel(bank, mode));
-
 			}
 			return banksVM; 
-			//for (int j = 0; j < banks.Count; j++)
-			//{
-			//	for (int i = 0; i < banks.Count; i++)
-			//	{
-			//		switch (mode)
-			//		{
-			//			case EExchangeAction.EURBuy:
-			//				if (Convert.ToDouble(banks[i].USDBuy) > Convert.ToDouble(banks[j].USDBuy))
-			//				{
-			//					bank = banks[i];
-			//					banks[i] = banks[j];
-			//					banks[j] = bank;
-			//				}
-			//				break;
-			//			case EExchangeAction.EURSell:
-			//				if (Convert.ToDouble(banks[i].EURSell) > Convert.ToDouble(banks[j].EURSell))
-			//				{
-			//					bank = banks[i];
-			//					banks[i] = banks[j];
-			//					banks[j] = bank;
-			//				}
-			//				break;
-			//			case EExchangeAction.USDBuy:
-			//				if (Convert.ToDouble(banks[i].USDBuy) > Convert.ToDouble(banks[j].USDBuy))
-			//				{
-			//					bank = banks[i];
-			//					banks[i] = banks[j];
-			//					banks[j] = bank;
-			//				}
-			//				break;
-			//			case EExchangeAction.USDSell:
-			//				if (Convert.ToDouble(banks[i].USDSell) > Convert.ToDouble(banks[j].USDSell))
-			//				{
-			//					bank = banks[i];
-			//					banks[i] = banks[j];
-			//					banks[j] = bank;
-			//				}
-			//				break;
-			//			default:
-			//				break;
-			//		}
-			//	}
-			//}
-			//return banks;
-			
 		}
 	}
 }

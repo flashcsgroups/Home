@@ -49,6 +49,7 @@ namespace ExchangeRete.Core
 
 		public override async void Start()
 		{
+			LoadSettingsBanks();
 			await DownloadData();
 		}
 
@@ -56,18 +57,23 @@ namespace ExchangeRete.Core
 		{
 			_dataService = service;
 
-			// подписка на событие
+			// подписка на событие/ будет вызыватся когда сохранится город
 			_dataService.OnSaveCityChanged += async (object sender, EventArgs e) =>
 			{
-				Banks =await _dataService.GetBanks(Convert.ToInt32(SaveSettingsCitySelect.Id));
+				Banks =await _dataService.GetBanks(Convert.ToInt32(Settings.SaveSettingsCitySelect.Id));
 			};
+		}
+
+		public void LoadSettingsBanks() {
+			if (!ReferenceEquals(null, Settings.SaveSettingsBanks))
+				CurrencyBank = SortBank.SortBanksByExchangeAction
+									   (Settings.SaveSettingsBanks, EExchangeAction.EURBuy);
 		}
 
 		public async Task DownloadData()
 		{
-			//object.ReferenceEquals(null,Settings.SaveSettingsBanks);
 			if (ReferenceEquals(null, Settings.SaveSettingsBanks) &
-			    ReferenceEquals(null, SaveSettingsCitySelect	))
+			    ReferenceEquals(null, Settings.SaveSettingsCitySelect	))
 			{
 				CurrencyBank = SortBank.SortBanksByExchangeAction
 				                       (Banks = await _dataService.GetBanks(4212), EExchangeAction.EURBuy);
@@ -75,19 +81,13 @@ namespace ExchangeRete.Core
 			else if (ReferenceEquals(null, Settings.SaveSettingsBanks)) 
 			{
 				CurrencyBank = SortBank.SortBanksByExchangeAction
-									   (Banks = await _dataService.GetBanks(SaveSettingsCitySelect.Id), Settings.SaveParamSortBanks);
+									   (Banks = await _dataService.GetBanks(Settings.SaveSettingsCitySelect.Id), Settings.SaveParamSortBanks);
 			}
 			else
 			{
 				CurrencyBank = SortBank.SortBanksByExchangeAction
 				                       (Banks = Settings.SaveSettingsBanks,	Settings.SaveParamSortBanks);	
 			}
-		}
-
-		public CityModel SaveSettingsCitySelect { 
-			get {//берем настройки выбранного города
-				return Settings.SaveSettingsCitySelect;
-				} 
 		}
 
 		private IMvxCommand _selectBuySellEURUSD;

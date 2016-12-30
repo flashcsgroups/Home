@@ -120,7 +120,6 @@
     <Compile Include="Setup.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="DebugTrace.cs" />
-    <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Views\BanksView.cs" />
     <Compile Include="Views\CitiesView.cs" />
     <Compile Include="Adapters\MvxViewPagerFragmentAdapter.cs" />
@@ -131,7 +130,6 @@
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
-    <None Include="Assets\AboutAssets.txt" />
     <None Include="packages.config" />
     <None Include="ToDo-MvvmCross\_ Droid UI.txt" />
   </ItemGroup>
@@ -144,7 +142,6 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\values\SplashStyle.xml" />
     <AndroidResource Include="Resources\layout\SplashScreen.axml" />
-    <AndroidResource Include="Resources\layout\FirstView.axml" />
     <AndroidResource Include="Resources\drawable\splash.png" />
     <AndroidResource Include="Resources\layout\BanksView.axml" />
     <AndroidResource Include="Resources\layout\banks_list_item.axml" />

@@ -2303,58 +2303,55 @@ namespace ExchangeRete.Droid
 			public const int CitiesView = 2130968604;
 			
 			// aapt resource value: 0x7f04001d
-			public const int FirstView = 2130968605;
+			public const int notification_media_action = 2130968605;
 			
 			// aapt resource value: 0x7f04001e
-			public const int notification_media_action = 2130968606;
+			public const int notification_media_cancel_action = 2130968606;
 			
 			// aapt resource value: 0x7f04001f
-			public const int notification_media_cancel_action = 2130968607;
+			public const int notification_template_big_media = 2130968607;
 			
 			// aapt resource value: 0x7f040020
-			public const int notification_template_big_media = 2130968608;
+			public const int notification_template_big_media_narrow = 2130968608;
 			
 			// aapt resource value: 0x7f040021
-			public const int notification_template_big_media_narrow = 2130968609;
+			public const int notification_template_lines = 2130968609;
 			
 			// aapt resource value: 0x7f040022
-			public const int notification_template_lines = 2130968610;
+			public const int notification_template_media = 2130968610;
 			
 			// aapt resource value: 0x7f040023
-			public const int notification_template_media = 2130968611;
+			public const int notification_template_part_chronometer = 2130968611;
 			
 			// aapt resource value: 0x7f040024
-			public const int notification_template_part_chronometer = 2130968612;
+			public const int notification_template_part_time = 2130968612;
 			
 			// aapt resource value: 0x7f040025
-			public const int notification_template_part_time = 2130968613;
+			public const int select_dialog_item_material = 2130968613;
 			
 			// aapt resource value: 0x7f040026
-			public const int select_dialog_item_material = 2130968614;
+			public const int select_dialog_multichoice_material = 2130968614;
 			
 			// aapt resource value: 0x7f040027
-			public const int select_dialog_multichoice_material = 2130968615;
+			public const int select_dialog_singlechoice_material = 2130968615;
 			
 			// aapt resource value: 0x7f040028
-			public const int select_dialog_singlechoice_material = 2130968616;
+			public const int SplashScreen = 2130968616;
 			
 			// aapt resource value: 0x7f040029
-			public const int SplashScreen = 2130968617;
+			public const int support_simple_spinner_dropdown_item = 2130968617;
 			
 			// aapt resource value: 0x7f04002a
-			public const int support_simple_spinner_dropdown_item = 2130968618;
+			public const int TabView = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int TabView = 2130968619;
+			public const int themed_circles = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
-			public const int themed_circles = 2130968620;
+			public const int themed_titles = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public const int themed_titles = 2130968621;
-			
-			// aapt resource value: 0x7f04002e
-			public const int vpi__tab = 2130968622;
+			public const int vpi__tab = 2130968621;
 			
 			static Layout()
 			{

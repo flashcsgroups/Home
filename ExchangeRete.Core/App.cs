@@ -11,8 +11,7 @@ namespace ExchangeRate.Core
                 .EndingWith("Service")
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
-
-            //RegisterAppStart<ViewModels.FirstViewModel>();
+			
 			RegisterAppStart<TabViewModel>();
         }
     }

@@ -8,7 +8,6 @@ namespace ExchangeRete.Droid
 	{
 		protected override MvxVisibility Convert(object value, object parameter, System.Globalization.CultureInfo culture)
 		{
-			
 			if ((bool)(value))
 				return MvxVisibility.Visible;
 			else

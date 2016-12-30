@@ -29,6 +29,7 @@ namespace ExchangeRete.Core
 
 		public void CitiesLoadSettings()
 		{
+			if (!ReferenceEquals(null,Settings.SaveSettingsCities))
 			Cities = Settings.SaveSettingsCities;
 		}
 		public CitiesViewModel(IDataService service)
@@ -47,9 +48,10 @@ namespace ExchangeRete.Core
 		{
 			get
 			{
-				return new MvxCommand<CityModel>(city => {
-					if (!ReferenceEquals(null, Settings.SaveSettingsCitySelect)) 
-					{	//Ищим старый выделенный город и делаем его фолс
+				return new MvxCommand<CityModel>(city =>
+				{
+					if (!ReferenceEquals(null, Settings.SaveSettingsCitySelect))
+					{   //Ищим старый выделенный город и делаем его фолс
 						int selectId = Settings.SaveSettingsCitySelect.Id;
 						for (int i = 0; i < _cities.Count; i++)
 						{
@@ -62,9 +64,7 @@ namespace ExchangeRete.Core
 					//новый выделенный сохраняем
 					city.Selected = true;
 					Settings.SaveSettingsCitySelect = city;
-					//RaisePropertyChanged(() => Cities);
 				});
-				//return _selectCities;
 			}
 		}
 	}

@@ -17,12 +17,10 @@ namespace ExchangeRete.Core
 			try
 			{
 				string urlmod = url + METHOD + parametrs + value;
-					//WebClient wc = new WebClient();
-					//return JsonConvert.DeserializeObject<T>(wc.DownloadString(urlmod));
 				HttpClient client = new HttpClient();
-				var json = await client.GetStringAsync(urlmod);//Task<json>
+				var json = await client.GetStringAsync(urlmod);
 
-				return JsonConvert.DeserializeObject<T>(json);//Task<T>
+				return JsonConvert.DeserializeObject<T>(json);
 			}
 			catch (Exception e)
 			{	

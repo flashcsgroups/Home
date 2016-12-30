@@ -8,11 +8,6 @@ using Android.Widget;
 using ExchangeRete.Core;
 using MvvmCross.Droid.Support.V4;
 
-//using DK.Ostebaronen.Droid.ViewPagerIndicator;
-//using ViewPagerIndicator;//  tyt
-
-//using Cirrious.MvvmCross.Droid.Fragging;
-//using FragmentSample.Core.ViewModels.Tab;
 namespace ExchangeRete.Droid.Views
 {
 	[Activity(Label = "View for TabViewModel")]

@@ -12,10 +12,6 @@ namespace ExchangeRete.Core
 		public string Name { get; set; }
 		[JsonProperty("TranslitId")]
 		public string TranslitId { get; set; }
-
-		//[JsonProperty("Selected")]
-		//public bool Selected { get{} set{ RaisePropertyChanged("Selected"); } }
-			
 		private bool _selected;
 		[JsonProperty("Selected")]
 		public bool Selected

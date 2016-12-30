@@ -15,18 +15,6 @@ namespace ExchangeRete.Droid
 	[Register("exchangerete.droid.CitiesView")]
 	public class CitiesView : MvxFragment
 	{
-
-
-
-		//public new CitiesViewModel ViewModel
-		//{
-		//	get
-		//	{
-		//		return (CitiesViewModel)base.ViewModel;
-		//	}
-		//}
-
-
 		public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle saveInstanceState)
 		{
 			var ignore = base.OnCreateView(inflater, container, saveInstanceState);
