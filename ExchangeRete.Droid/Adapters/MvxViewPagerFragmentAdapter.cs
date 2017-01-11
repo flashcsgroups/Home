@@ -10,7 +10,7 @@ using MvvmCross.Droid.Support.V4;
 namespace ExchangeRete.Droid
 {
 		public class MvxViewPagerFragmentAdapter
-	: FragmentPagerAdapter
+		: FragmentPagerAdapter
 		{
 			public class FragmentInfo
 			{

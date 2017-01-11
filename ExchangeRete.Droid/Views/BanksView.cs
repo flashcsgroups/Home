@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.OS;
 using Android.Runtime;
+using Android.Support.V4.App;
 using Android.Views;
 using ExchangeRete.Core;
 using MvvmCross.Binding.Droid.BindingContext;
@@ -18,6 +19,5 @@ namespace ExchangeRete.Droid
 			var ignore = base.OnCreateView(inflater, container, saveInstanceState);
 			return this.BindingInflate(Resource.Layout.BanksView, null);
 		}
-
 	}
 }
