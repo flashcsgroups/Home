@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:local="http://schemas.android.com/apk/res-auto"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:paddingLeft="15dp"
-    android:paddingRight="15dp"
-    android:paddingTop="5dp"
-    android:orientation="vertical">
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView
+            android:text="default_bank"
+            android:layout_width="297.5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="left|center"
+            local:MvxBind="Text Name"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="18dp" />
+    </LinearLayout>
     <LinearLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent">
@@ -29,4 +39,4 @@
             android:textColor="@android:color/holo_green_light"
             android:textSize="18dp" />
     </LinearLayout>
-</LinearLayout>
+</com.daimajia.swipe.SwipeLayout>

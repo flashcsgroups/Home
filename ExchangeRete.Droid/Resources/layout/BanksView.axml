@@ -43,5 +43,5 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         local:MvxBind="ItemsSource CurrencyBank"
-        local:MvxItemTemplate="@layout/swipebanks_list_item" />
+        local:MvxItemTemplate="@layout/banks_list_item" />
 </LinearLayout>

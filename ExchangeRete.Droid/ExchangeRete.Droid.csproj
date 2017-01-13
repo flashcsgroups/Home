@@ -132,8 +132,8 @@
     <Reference Include="MvvmCross.Droid.Support.V7.AppCompat">
       <HintPath>..\packages\MvvmCross.Droid.Support.V7.AppCompat.4.4.0\lib\MonoAndroid70\MvvmCross.Droid.Support.V7.AppCompat.dll</HintPath>
     </Reference>
-    <Reference Include="FortySevenDeg.SwipeListView">
-      <HintPath>..\Components\android-swipelistview-2.0.0\lib\android\FortySevenDeg.SwipeListView.dll</HintPath>
+    <Reference Include="Xamarin.Android.Support.v7.RecyclerView">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.RecyclerView.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -150,7 +150,7 @@
     <Compile Include="Converters\Select.cs" />
     <Compile Include="Bootstrap\VisibilityPluginBootstrap.cs" />
     <Compile Include="Bootstrap\JsonPluginBootstrap.cs" />
-    <Compile Include="Views\SwipeBanksView.cs" />
+    <Compile Include="CastomView\SwipeLayout.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -174,12 +174,13 @@
     <AndroidResource Include="Resources\layout\cities_list_item.axml" />
     <AndroidResource Include="Resources\layout\TabView.axml" />
     <AndroidResource Include="Resources\drawable\Ok.png" />
-    <AndroidResource Include="Resources\layout\swipebanks_list_item.axml" />
+    <AndroidResource Include="Resources\values\attrs.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
     <Folder Include="Adapters\" />
     <Folder Include="Converters\" />
+    <Folder Include="CastomView\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ExchangeRete.Core\ExchangeRete.Core.csproj">
@@ -188,8 +189,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <XamarinComponentReference Include="android-swipelistview">
-      <Version>2.0.0</Version>
+    <XamarinComponentReference Include="AndroidSwipeLayout">
+      <Version>1.2.0.0</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
   </ItemGroup>

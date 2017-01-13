@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="SwipeLayout">
+		<attr name="gravity" format="dimension" />
+		<attr name="sticky" format="dimension" />
+		<attr name="clamp" format="dimension" />
+		<attr name="bring_to_clamp" format="dimension" />
+		<attr name="sticky_sensitivity" format="dimension" />
+		<attr name="bring_to_clamp" format="dimension" />		
+		<attr name="swipe_enabled" format="dimension" />
+		<attr name="left_swipe_enabled" format="dimension" />
+		<attr name="right_swipe_enabled" format="dimension" />
+	</declare-styleable>
+</resources>
